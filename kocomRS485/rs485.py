@@ -655,7 +655,7 @@ class Kocom(rs485):
                                 'name': '{}_{}_{}'.format(self._name, room, sub_device),
                                 'cmd_t': '{}/{}/{}_{}/set'.format(HA_PREFIX, HA_LIGHT, room, sub_device),
                                 'stat_t': '{}/{}/{}/state'.format(HA_PREFIX, HA_LIGHT, room),
-                                'val_tpl': '{{ value_json.' + str(sub_device) + ' }}',
+                                'stat_val_tpl': '{{ value_json.' + str(sub_device) + ' }}',
                                 'pl_on': 'on',
                                 'pl_off': 'off',
                                 'uniq_id': '{}_{}_{}'.format(self._name, room, sub_device),
