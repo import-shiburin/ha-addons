@@ -400,7 +400,7 @@ class Kocom(rs485):
                 logger.info('[From HA]Set Loglevel to {}'.format(_payload))
                 return
             elif _topic[3] == 'restart':
-                self.homeassistant_device_discovery()
+                self.homeassistant_device_discovery(initial=True)
                 logger.info('[From HA]HomeAssistant Restart')
                 return
             elif _topic[3] == 'remove':

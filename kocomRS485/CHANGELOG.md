@@ -1,9 +1,11 @@
 RS485 Compilation
 =================
-Version : 1.1.2
+Version : 1.1.3
 ----------------
 
 ## 패치노트
+### Ver 1.1.3
+> HA Restart event가 발행되었을 때 Full initialize를 수행하도록 수정
 ### Ver 1.1.2
 > 조명 상태 쿼리가 `val_tpl` 대신 `stat_val_tpl`로 들어가도록 수정
 ### Ver 1.0.7
